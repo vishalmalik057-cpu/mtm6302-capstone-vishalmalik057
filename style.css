@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #07111f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0b1b33;
+  border-bottom: 1px solid #1f3557;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero,
+.gallery {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.hero h1,
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.hero-content {
+  display: flex;
+  gap: 20px;
+  background: #0d1d36;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.hero-image,
+.hero-text {
+  flex: 1;
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #f5c242;
+  color: #111;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.secondary {
+  background: #1f3557;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #0d1d36;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 1.1rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b1b33;
+  margin-top: 40px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 8px 0;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .site-header {
+    padding: 20px;
+  }
+}

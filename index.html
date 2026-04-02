@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA APOD Prototype</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <h1>Capstone project</h1>
-    <p>Assignment 1 </p>
-    
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo" style="height:40px;">
+    </div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Featured Astrophoto</h1>
+
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="assets/hero.jpg.png" alt="Hero Image">
+        </div>
+
+        <div class="hero-text">
+          <p class="date">April 24, 2024</p>
+          <h2>NASA Astronomy Picture of the Day</h2>
+          <p>
+            Explore the universe with NASA's Astronomy Picture of the Day.
+          </p>
+
+          <div class="buttons">
+            <button>Save to Favorites</button>
+            <button class="secondary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+
+      <div class="gallery-grid">
+
+        <article class="card">
+          <img src="assets/star cluster.png" alt="Star Cluster">
+          <h3>Star Cluster</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/night sky.png" alt="Night Sky">
+          <h3>Night Sky</h3>
+        </article>
+
+        <article class="card">
+          <img src="assets/nebula.png" alt="Nebula">
+          <h3>Nebula</h3>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 NASA APOD Prototype</p>
+  </footer>
+
 </body>
 </html>

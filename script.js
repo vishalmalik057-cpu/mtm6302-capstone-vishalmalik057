@@ -1,0 +1,1 @@
+console.log("NASA APOD prototype loaded");
